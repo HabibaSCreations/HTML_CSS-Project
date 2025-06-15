@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .positioned{
+            position: relative;
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+        }
+        .nonpositioned{
+            border: 1px dashed black;
+            width: 150px;
+            height: 150px;
+        }
+        .absolute{
+            position: absolute;
+            border: 1px dashed red;
+            background-color: white;
+            right: 30px;
+            top: 30px;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            color: white;
+            background-color: red;
+            transition: width 2s, height 4s, transform 2s;
+            transition-delay: 1s;
+            transition-timing-function: ease-out;
+        }
+        div1:hover{
+            width: 300px;
+            height: 300px;
+            transform:rotateX('30')
+        }
+        @keyframes my-animation{
+          0%{
+            background-color: red;
+          }
+          25%{
+            background-color: yellow;
+          }
+          50%{
+            background-color: blue;
+          }
+          100%{
+            background-color: green;
+          }
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color:cyan;
+            animation-name: my-animation;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+            animation-direction: reverse;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            
+            column-gap: 10px;
+            row-gap: 10px;
+            justify-content: center;
+            border: 1px solid black;
+        }
+        .grid-item{
+            border: 1px solid red;
+        }
+        .big{
+            height: 1000px;
+            border: 1px solid black;
+        }
+        .fixed{
+            border: 1px solid red;
+            width: 100px;
+            position: fixed;
+            right:30px;
+            top: 30px;
+        }
+        .flex-container{
+            display: flex;
+            
+           flex-wrap: wrap;
+           align-content: flex-start;
+            border: 1px solid black;
+            width: 300px;
+            height: 150px;
+            gap: 10px;
+        }
+        .flex-item{
+            border: 1px solid red;
+            flex-basis: 120px;
+        }
+        .parent{
+            height: 200px;
+            width: 200px;
+            border: 1px dashed rgb(202, 18, 18);
+        }
+        .normal{
+            border:  1px dashed blue;
+        }
+        .relative{
+            border: 1px solid green;
+            position: relative;
+            left: 30px;
+            top: 30px;
+        }
+        .parent{
+            width: 200px;
+            height: 200px;
+            overflow: auto;
+        }
+        .sticky{
+            position: sticky;
+            top: 0;
+            border: 1px solid red;
+            background-color: yellow;
+        }
+        div{
+            border: 1px solid black;
+        }
+        .container{
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+       .child{
+        width: 100px;
+        height: 100px;
+        background-color: white;
+       }
+       .absolute{
+        position: absolute;
+        border: 1px solid red;
+        text-align: right;
+       }
+       .z-index-minus-two{
+        z-index: -2;
+        left: 100px;
+        top: 5px;
+       }
+       .z-index-minus-one{
+        z-index: -1;
+        left: 70px;
+        top: 35px;
+       }
+       .z-index-zero{
+        z-index: 0;
+        left: 40px;
+        top: 65px;
+       }
+       .z-index-one{
+        z-index: 1;
+        left: 10px;
+        top: 95px;
+       }
+       .z-index-two{
+        z-index: 2;
+       }
+    </style>
+</head>
+<body>
+    <div class="positioned">Positioned
+        <div class="nonpositioned">nonpositioned</div>
+        <div class="absolute">I am absolute</div>
+    </div>
+
+    <div1></div1>
+
+    <div class="grid-container">
+        <div class="grid-item item1">Item 1</div>
+        <div class="grid-item item2">Item 2</div>
+        <div class="grid-item item3">Item 3</div>
+        <div class="grid-item item4">Item 4</div>
+        <div class="grid-item item5">Item 5</div>
+        <div class="grid-item item6">Item 6</div>
+        <div class="grid-item item7">Item 7</div>
+        <div class="grid-item item8">Item 8</div>
+        <div class="grid-item item9">Item 9</div>
+        </div>
+
+        <div>Normal element</div>
+        <div class="fixed">I am fixed!</div>
+        <div class="big">A big element.</div>
+
+        <div class="flex-container">
+            <div class="flex-item item1">flex item 1</div>
+            <div class="flex-item item2">flex item 2</div>
+            <div class="flex-item item3">flex item 3</div>
+          
+            </div>
+
+            <img id="myimage">
+    <script>
+        fetch('https://httpbin.org/image/webp')
+        .then(response=>{
+            if(!response.ok){
+                throw new Error(`Http code ${response.status}`)
+            }
+            else{
+                return response.blob();
+            }
+        }).then(blob=>{
+            const img=document.getElementById('myimage');
+            img.src=URL.createObjectURL(blob);
+        }).catch(error=>{
+            console.log(`Error occured`)
+        })
+    </script>
+
+<div class="parent">
+    <div class="normal">Normal div</div>
+
+
+    <div class="relative">relative div</div>
+</div>
+<select name="cars" multiple>
+    <option value="Volvo">Volvo</option>
+    <option value="Audi">Audi</option>
+    <option value="Noah">Noah</option>
+    <option value="Saab">Saab</option>
+</select>
+
+
+<p onmousemove="enlarge(this)">The function enlarge() is
+    triggered when the user mouse pointer is moved over the paragraph.
+    This function will enlarge the font size.</p>
+    <script>
+        function enlarge(e){
+            var oldFontSize=e.style["font-size"];
+            if(!oldFontSize){
+                oldFontSize=16;
+            }
+            else{
+                oldFontSize=parseFloat(oldFontSize.replace("px",""));
+            }
+            e.style["font-size"]=oldFontSize+0.1+"px"
+        }
+    </script>
+
+<body onresize="eventHandler()">
+    <h1>This is a heading</h1>
+        <script>
+        function eventHandler(){
+            alert("you have changed the size of your browser window")
+        }
+        </script>
+
+<style>
+    .found{background-color: #ff0;}
+    body{margin: 15px;}
+    textarea{width: 100%; height: 350px;}
+</style>
+</head>
+<body>
+<h1>Finding all instances of pattern</h1>
+<form id="textsearch">
+    <textarea id="incoming"></textarea>
+    <p>Search pattern : <input type="text" id="pattern"></p>
+</form>
+<button id="searchSubmit">Search for pattern</button>
+<div id="searchResult"></div>
+<script>
+    document.getElementById("searchSubmit").onclick=function(){
+        const pattern=document.getElementById('pattern').value;
+        const regex=new RegExp(pattern,'g');
+        const searchText=document.getElementById('incoming').value;
+        let highlightedResult="<pre>";
+        let startPosition=0;
+        let endPosition=0;
+        const matches=searchText.matchAll(regex);
+        for(const match of matches){
+            endPosition=match.index;
+            highlightedResult+=searchText.slice(startPosition,endPosition);
+            highlightedResult+="<span class='found'>"+match[0]+"</span>";
+            startPosition=endPosition+match[0].length;
+        }
+        highlightedResult+=searchText.slice(startPosition);
+        highlightedResult+="</pre>";
+        document.getElementById("searchResult").innerHTML=highlightedResult;
+    }
+</script>
+
+<div class="parent">
+    <p>Try to scroll inside this frame to understand how sticky
+    positioning works.</p>
+    <div class="sticky">I am sticky!</div>
+    <p>In this example, the sticky element sticks to the top of the page
+    when it reaches the position "top: 0".</p>
+    <p>Scroll back up to remove the stickiness.</p>
+    <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+    concludaturque et eum, altera fabulas ut quo.</p>
+    </div>
+
+    <div class="container">
+        <div class="absolute child z-index-minus-two">z-index: -2</div>
+        <div class="absolute child z-index-minus-one">z-index: -1</div>
+        <div class="absolute child z-index-zero">z-index: 0</div>
+        <div class="absolute child z-index-one">z-index: 1</div>
+        <div class="child z-index-two">z-index: 2; but I'm not
+        positioned</div>
+        
+</body>
+</html>

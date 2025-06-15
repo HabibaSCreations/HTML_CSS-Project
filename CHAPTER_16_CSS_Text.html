@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+     p {
+        text-decoration-line: underline;
+        }
+        .p1 {
+        text-decoration-style: double;
+        }
+        .p2 {
+        text-decoration-style: dotted;
+        }
+        .p3 {
+        text-decoration-style: dashed;
+        }
+        .p4 {
+        text-decoration-style: wavy;
+        }
+        body{
+        margin: 0;
+      }
+      header{
+        height: 60px;
+      }
+      .fixed{
+        background-position: center 60px;
+        height: 500px;
+        background-image: url("images/pic.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      footer{
+        height: 1000px;
+        background-color: lightgreen;
+      }
+      p{
+        width: 120px;
+        height: 200px;
+        overflow: auto;
+        border: 1px solid black;
+        background-image: url("images/dahlia.jpg");
+        background-repeat: no-repeat;
+        background-attachment: local;
+      }
+      .container{
+            border: 1px solid black;
+            width: 200px;
+            height: 100px;
+            overflow: auto;
+        }
+        .child{
+            margin: 10px;
+            border: 1px solid black;
+            background-color: bisque;
+            height: 150px;
+        }
+        p[class] {
+                width: 140px;
+                border: 1px solid #000000;
+                }
+                .test-keep-all {
+                word-break: keep-all;
+                }
+                .test-break-word {
+                word-break: break-word;
+                }
+                .test-break-all {
+                word-break: break-all;
+                }
+                p {
+                width: 150px;
+                border: 1px solid black;
+                }
+                .test-one {
+                text-align: justify;
+                }
+                .test-two {
+                text-align: center;
+                }
+                .test-three {
+                text-align: right;
+                }
+   </style>
+        
+    
+        
+</head>
+<body>
+    <p class="p1">This is the HTML Project.</p>
+    <p class="p2">This is the HTML Project.</p>
+    <p class="p3">This is the HTML Project.</p>
+    <p class="p4">This is the HTML Project.</p>
+    <p>This is the 5th HTML Project.</p>
+    
+
+    <header>This is a header with height of 60px.</header>
+    <div class="fixed"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita est, rerum laboriosam quis similique quam enim perferendis aut nesciunt omnis quaerat cumque excepturi laborum magni eligendi voluptas doloremque iusto veniam!Lorem</p>
+    <footer></footer> 
+
+    <div class="container">
+        <div class="child">
+            I am the content
+        </div>
+
+        <p class="test-keep-all">This is a-very-long-hyphen word, and this is
+            averyveryveryveryveryverylong word.</p>
+            <p>Testing "word-break: break-word"</p>
+            <p class="test-break-word">This is a-very-long-hyphen word, and
+            this is averyveryveryveryveryverylong word.</p>
+            <p>Testing "word-break: break-all"</p>
+            <p class="test-break-all">This is a-very-long-hyphen word, and this
+            is averyveryveryveryveryverylong word.</p>
+
+            <p>This paragraph is for testing. This paragraph is for testing. This
+                paragraph is for testing.</p>
+                <p class="test-one">This paragraph is for testing. This paragraph is
+                for testing. This paragraph is for testing.</p>
+                <p class="test-two">This paragraph is for testing. This paragraph is
+                for testing. This paragraph is for testing.</p>
+                <p class="test-three">This paragraph is for testing. This paragraph is
+                for testing. This paragraph is for testing.</p>
+                
+
+
+            
+                
+            
+</body>
+</html>

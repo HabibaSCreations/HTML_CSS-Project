@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body * p {
+        color: red;
+
+    }
+        p {
+    color:blueviolet;
+    }
+        #my-text {
+    color:hotpink;
+    }
+        .my-text {
+    color:palegreen;
+    }
+        .my-text.main {
+    color: olivedrab;
+    }
+    .my-text {
+    color: blue;
+    }
+        :link {
+    color: green;
+    }
+    :visited {
+    color: yellow;
+    }
+        :focus {
+    color: slateblue;
+    }
+    :hover {
+    color: goldenrod;
+    }
+        :active {
+    color: blue;
+    }
+        button:focus {
+    color: tomato;
+    }
+    button:hover {
+    color: green;
+    }
+    button:active {
+    color: khaki;
+    }
+        :enabled {
+    background-color:aqua;
+    }
+    :disabled {
+    background-color: #ccc;
+    }
+        input:checked + span {
+    color: lawngreen;
+    }
+        input:invalid {
+    background-color: lightpink;
+    }
+        input:required {
+    background-color: lightgreen;
+    }
+        input:out-of-range {
+    background-color: lightblue;
+    }
+        p:first-child {
+    color: wheat;
+    }
+        p:last-child {
+    color: royalblue;
+    }
+        p:nth-child(2) {
+    color:plum;
+    }
+        p:nth-child(odd) {
+    color: burlywood;
+    }
+        p:nth-child(even) {
+    color:mediumspringgreen;
+    }
+        div:empty {
+    height: 20px;
+    border: 1px solid red;
+    }
+        input:not([type="submit"]) {
+    background-color: cyan;
+    }
+        .nav-lnk:not(:first-child):not(:last-child) {
+    color:black;
+    }
+        p::first-letter {
+    font-size: 30px;
+    color: springgreen;
+    }
+        .required::before {
+    content: "* ";
+    color: aquamarine;
+    }
+        .required::after {
+    content: "* ";
+    color: red;
+    }
+        [class|="word"] {
+    color: pink;
+    }
+        [class~="word"] {
+    color: purple;
+    }
+        [class^="word"] {
+    color:royalblue;
+    }
+        [class$="word"] {
+    color:hotpink;
+    }
+        [class*="word"] {
+    color: darkmagenta;
+    }
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+        <p>My Project Work</p>
+    </div>
+    <p>My project Work 2</p>
+
+    <div>
+        <p>My project Work 3</p>
+        </div>
+        <p>My project Work 4</p>
+
+        <body>
+            <div>
+            <p id="my-text">My project Work 5</p>
+            </div>
+            <p>My project work 6</p>
+
+            <div>
+                <p class="my-work">some work</p>
+                 <p class="my-work">my different work</p>
+                </div>
+                <p>Another text</p>
+
+                <div>
+                    <p class="my-work main">my work</p>
+                     <p class="my-work">my different work</p>
+                    </div>
+                    <p>my different work</p>
+
+                                    <a>This is not a link</a>
+                <a href="https://neodtruman.com" target="_blank">My
+                Website</a>
+                <a href="https://fonts.google.com" target="_blank">Google
+                Fonts</a>
+
+                <p>Press TAB to remove the focus on the button.</p>
+                <button>This is a button</button>
+
+                                <p>Update user's information</p>
+                <p>Username: <input type="text" value="username" disabled />
+                </p>
+                <p>Email: <input type="text" value="email@company.com" /></p>
+
+                <p>Select your options:</p>
+                <p>
+                Gender:
+                <label><input type="radio" name="gender" />
+                <span>Male</span></label>
+                <label><input type="radio" name="gender" />
+                <span>Female</span></label>
+                </p>
+                <p>
+                <label><input type="checkbox" /> <span>Accept the
+                agreement</span></label>
+                </p>
+
+                <form action="">
+                    <p>This text input must be a three-letter code:</p>
+                    <input type="text" name="code" pattern="[A-Za-z]{3}"
+                    title="Three letter code." value="a" />
+                    </form>
+
+                    <form action="">
+                        <p>This text input is required:</p>
+                        <input type="text" name="fname" required />
+                        </form>
+
+                        <form action="">
+                            <p>This number input must be in the range of 1 - 6:</p>
+                            <input type="number" name="quantity" min="1" max="6"
+                            value="8" />
+                            </form>
+
+                            <div>
+                                <p>Line 1</p>
+                                <p>Line 2</p>
+                                </div>
+                                <p>Line 3</p>
+                                <p>Line 4</p>
+
+                                <div>
+                                    <p>Line 1</p>
+                                    <p>Line 2</p>
+                                    </div>
+                                    <p>Line 3</p>
+                                    <p>Line 4</p>
+
+                                    <div>
+                                        <p>Line 1</p>
+                                        <p>Line 2</p>
+                                        <p>Line 3</p>
+                                        </div>
+                                        <p>Line 4</p>
+                                        <p>Line 5</p>
+                                        <p>Line 6</p>
+
+                                        <div>
+                                            <p>Line 1</p>
+                                            <p>Line 2</p>
+                                            <p>Line 3</p>
+                                            </div>
+                                            <p>Line 4</p>
+                                            <p>Line 5</p>
+                                            <p>Line 6</p>
+
+                                            <div>
+                                                <p>Line 1</p>
+                                                <p>Line 2</p>
+                                                <p>Line 3</p>
+                                                </div>
+                                                <p>Line 4</p>
+                                                <p>Line 5</p>
+                                                <p>Line 6</p>
+                                                <div></div>
+<div></div>
+<div>This is not empty!</div>
+
+<p>Update user's information</p>
+<p>Address: <input type="text" value="Your address" /></p>
+<p>Email: <input type="text" value="email@company.com" /></p>
+<input type="submit" value="Submit" />
+
+<div>
+    <a class="nav-lnk" href="#">Articles</a>
+    <a class="nav-lnk" href="#">Links</a>
+    <a class="nav-lnk" href="#">About</a>
+    <a class="nav-lnk" href="#">Newsletter</a>
+    </div>
+
+        <h1>My heading</h1>
+    <p>My paragraph</p>
+
+    <p>
+        <label class="required">Username: </label>
+        <input type="text" />
+        </p>
+        <p>
+        <label>Email: </label>
+        <input type="text" />
+        </p>
+
+        <p>
+            <label class="required">Username: </label>
+            <input type="text" />
+            </p>
+            <p>
+            <label>Email: </label>
+            <input type="text" />
+            </p>
+
+            <p>[class|="word"] { color: red; }</p>
+<p class="works">My Project Work: "word"</p>
+<p class="highlight word">My Project Work: "highlight word"</p>
+<p class="works highlight">My Project Work: "work highlight"</p>
+<p class="highlight-word">My Project Work: "highlight-word"</p>
+<p class="works-highlight">My Project Work: "work-highlight"
+</p>
+<p class="works">My Project Work: "words"</p>
+
+<p>[class~="work"] { color: red; }</p>
+<p class="works">work class: "work"</p>
+<p class="highlight word">Word class: "highlight word"
+</p>
+<p class="work highlight">Work class: "work highlight"
+</p>
+<p class="highlight-word">My Project Work: "highlight-word"</p>
+<p class="word-highlight">My Project Work: "work-highlight"</p>
+<p class="work">My Project Work: "words"</p>
+
+<p>[class^="work"] { color: red; }</p>
+<p class="word">Word class: "word"</p>
+<p class="highlight word">My Project Work: "highlight word"</p>
+<p class="word highlight">My Project Work: "work highlight"
+</p>
+<p class="highlight-word">My Project Work: "highlight-word"</p>
+<p class="works-highlight">My Project Work: "works-highlight"
+</p>
+<p class="works">My Project Work: "works"</p>
+
+<p>[class$="work"] { color: red; }</p>
+<p class="work">Word class: "word"</p>
+<p class="highlight word">Word class: "highlight word"
+</p>
+<p class="work highlight">My Project Work: "work highlight"</p>
+<p class="highlight-word">My Project Work: "highlight-word"
+</p>
+<p class="word-highlight">My Project Work: "work-highlight"</p>
+<p class="words">My Project Work: "work"</p>
+
+
+<p class="work">My Project Work: "word"</p>
+<p class="highlight word">My Project Work: "highlight word"</p>
+<p class="work highlight">My Project Work: "work highlight"</p>
+<p class="highlight-word">My Project Work: "highlight-word"</p>
+<p class="work-highlight">My Project Work: "work-highlight"</p>
+<p class="works">My Project Work: "work"</p>
+
+
+
+        
+                    
+</body>
+</html>

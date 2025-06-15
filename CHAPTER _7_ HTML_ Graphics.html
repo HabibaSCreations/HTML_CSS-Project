@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="500" height="400" style="border: 1px solid black;">
+        This borowser does not support canvas element
+    </canvas>
+    <script>
+        var c=document.getElementById('myCanvas');
+        var ctx=c.getContext("2d");
+        ctx.font="30px Arial";
+        ctx.fillText("Neo D. Truman",0,60);
+    </script>
+    <script>
+        var c=document.getElementById('myCanvas');
+        var ctx=c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(200,100);
+        ctx.stroke();
+    </script>
+    <script>
+         var c=document.getElementById('myCanvas');
+         var ctx=c.getContext("2d");
+         ctx.arc(95,50,40,0,2*Math.PI);
+         ctx.stroke();
+    </script>
+    <script>
+        var c=document.getElementById('myCanvas');
+        var ctx=c.getContext("2d");
+        ctx.rect(20,20,160,60);
+        ctx.stroke();
+    </script>
+    <!-- <!-- <script>
+         var c=document.getElementById('myCanvas');
+         var ctx=c.getContext("2d");
+
+         var grd=ctx.createLinearGradient(0,0,200,0);
+         grd.addColorStop(0,"red");
+         grd.addColorStop(1,"yellow");
+         ctx.fillStyle=grd;
+
+         ctx.fillRect(20,30,160,60); -->
+    </script> -->
+    <script>
+         var c=document.getElementById('myCanvas');
+         var ctx=c.getContext("2d");
+
+         var grd=ctx.createRadialGradient(60,60,10,95,50,70);
+         grd.addColorStop(0,"red");
+         grd.addColorStop(1,"yellow");
+         ctx.fillStyle=grd;
+
+         ctx.fillRect(0,0,200,100);
+    </script>
+
+    <script>
+        var c=document.getElementById('myCanvas');
+        var ctx=c.getContext("2d");
+        const image=new Image();
+        image.onload=drawMyImage;
+
+        image.src="images/dahlia.jpg";
+
+        function drawMyImage(){
+            ctx.drawImage(this,50,50);
+            ctx.drawImage(this,0,0,180,180);
+        }
+    </script>
+
+
+<!-- 1. line -->
+<svg height="100" width="100" style="background-color: aquamarine;">
+    <line x1="0" y1="0" x2="100" y2="100" stroke="black" width="2"/>
+</svg>
+
+<!-- 2. Rect. -->
+<svg height="100" width="100" style="background-color: blanchedalmond;">
+    <rect x="10" y="10" height="60" width="80" stroke="red" width="4" fill="yellow"/>
+</svg>
+
+<svg height="100" width="100" style="background-color: blanchedalmond;">
+    <rect x="10" y="10" height="60" width="80" stroke="red" width="4" fill="yellow" rx="8" ry="8"/>
+</svg>
+
+<!-- 3. Circle -->
+
+<svg height="100" width="100" style="background-color: blanchedalmond;">
+    <circle cx="50" cy="50" r="40" stroke="red" stroke-width="4" fill="yellow"/>
+</svg>
+
+<svg height="100" width="100" style="background-color: blanchedalmond;">
+
+    <ellipse cx="50" cy="50" rx="40" ry="20" stroke="red" stroke-width="4" fill="yellow"/>
+</svg>
+<!-- 4. Polyline -->
+<svg height="100" width="100" style="background-color: blanchedalmond;">
+   <polyline points="50,0,100,50,50,100,0,50" fill="none" stroke="red" stroke-width="4"/>
+</svg>
+<!-- 5.  -->
+<svg height="100" width="100" style="background-color: blanchedalmond;">
+   <polygon points="50,0,100,50,50,100,0,50" fill="yellow" stroke="red" storoke-width="4"/>
+</svg>
+<!-- Path -->
+<svg height="100" width="100" style="background-color: blanchedalmond;">
+  <path d="M50 0 L25 80 l50 0 Z" fill="none" stroke="red" stroke-width="4"/>
+</svg>
+
+<!-- Text -->
+<svg height="200" width="200" style="background-color: blanchedalmond;">
+<text x="0" y="20" fill="red" transform="rotate(30)">This is a line of Text
+    <tspan x="10" y="50" fill="blue">This is the second line</tspan>
+    <tspan x="20" y="80">This is the third line</tspan>
+</text>
+</svg>
+<!-- Gradient-Linear -->
+<svg height="100" width="200" style="background-color: blanchedalmond;">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="yellow"/>
+        <stop offset="50%" stop-color="green"/>
+        <stop offset="100%" stop-color="red"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="200" height="100" fill="url(#grad)"/>
+</svg>
+<!-- Radial -gradient -->
+<svg height="100" width="200" style="background-color: blanchedalmond;">
+  <defs>
+    <radialGradient id="grad" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+        <stop offset="0%" stop-color="yellow"/>
+        <stop offset="50%" stop-color="green"/>
+        <stop offset="100%" stop-color="red"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="200" height="100" fill="url(#grad)"/>
+</svg>
+
+                                                
+                                        
+                        
+                    
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .newspaper {
+        column-count: 3;
+        column-gap: 40px;
+        column-rule:1px solid black;
+      
+        }
+        h1{
+            column-span: all;
+            text-align: center;
+        }
+        
+        .newspaper {
+        column-count: 3;
+        column-gap: 40px;
+        column-rule:1px solid black;
+      
+        }
+        h1{
+            column-span: all;
+            text-align: center;
+        }
+         /* img{
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            object-fit: contain;
+        } */
+        img{
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            object-fit: cover;
+        }
+        img{
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            object-fit: none;
+        }
+        img{
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            object-fit: scale-down;
+        }
+        .sprite{
+            background-image: url("images/pic.jpg");
+            height: 50px;
+            width: 50px;
+            margin: 5px;
+            display: inline-block;
+        }
+        .testing{
+            background-position: -10px -10px;
+        }
+        .number-1{
+            background-position: 0 0;
+        }
+        .number-2{
+            background-position: -50px 0;
+        }
+        .number-3{
+            background-position: -100px 0;
+        }
+        .number-4{
+            background-position: 0 -50px;
+        }
+        .number-5{
+            background-position: -50px -50px;
+        }
+        .number-6{
+            background-position: -100px -50px;
+        }
+        .number-7{
+            background-position: 0 -100px;
+        }
+        .number-8{
+            background-position: -50px -100px;
+        }
+        .number-9{
+            background-position: -100px -100px;
+        }
+        table{
+        border-collapse: collapse;
+        border: 1px solid green;
+        width: 100%;
+       }
+       th{
+        border: 1px solid red;
+        height: 30px;
+       }
+       td{
+        border: 1px solid blue;
+        height: 50px;
+        text-align: center;
+        vertical-align: top;
+       }
+
+       .my-element{
+            cursor: pointer;
+        }
+        .container{
+            border: 1px solid black;
+            width: 300px;
+            height: 100px;
+        }
+        .inline-blocks{
+            display: inline-block;
+            border: 1px solid red;
+            height: 40px;
+        }
+        .normal-blocks{
+            border: 1px solid blue;
+        }
+        .hidden{
+            display: none;
+        }
+        .invisible{
+            display: hidden;
+        }
+        .col{
+            display: inline-block;
+            width: 150px;
+        }
+        ul.circle{
+            list-style: circle;
+        }
+        ul.square{
+            list-style: square;
+        }
+        ol.upper-roman{
+            list-style-type: upper-roman;
+        }
+        ol.lower-alpha{
+            list-style-type: lower-alpha;
+        }
+        .container{
+            background-color: rgb(255,0,0);
+            padding: 20px;
+            margin: 10px;
+        }
+        .container.opacity{
+            opacity: 0.5;
+        }
+        .container.transparent{
+            background-color: rgba(255,0,0,0.5);
+        }
+        .child{
+            border: 1px solid black;
+        }
+        .container{
+            border: 1px solid black;
+            width: 200px;
+            height: 100px;
+            overflow: auto;
+        }
+        .child{
+            margin: 10px;
+            border: 1px solid black;
+            background-color: bisque;
+            height: 150px;
+        }
+        h1{
+            text-shadow: 3px 3px 5px red;
+        }
+        div{
+            border: 1px solid black;
+            box-shadow: 8px 0 10px gray,0 8px 10px grey;
+        }
+        .navlist li{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        float: left;
+      }  
+      .navlist li,
+      .navlist a{
+        display: block;
+        height: 60px;
+        width: 100px;      
+        }
+        .sprite{
+            background-image: url("images/dahlia.jpg");
+        }
+        .home{
+            background-position: 0 0;
+        }
+        .home:hover{
+            background-position: 0 -50px;
+        }
+        .prev{
+            background-position:-50px 0 ;
+        }
+        .prev:hover{
+            background-position:-50px -50px;
+        }
+
+        .next{
+            background-position:-100px 0 ;
+        }
+        .next:hover{
+            background-position:-100px -50px;
+        }
+        .div2{
+            transform: rotate(180deg);
+        }
+        .div3{
+            transform: rotate(-20deg);
+        }
+        body{
+        margin: 0;
+      }
+      header{
+        height: 60px;
+      }
+      .fixed{
+        background-position: center 60px;
+        height: 500px;
+        background-image: url("images/pic.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      footer{
+        height: 1000px;
+        background-color: lightgreen;
+      }
+      p{
+        width: 120px;
+        height: 200px;
+        overflow: auto;
+        border: 1px solid black;
+        background-image: url("images/dahlia.jpg");
+        background-repeat: no-repeat;
+        background-attachment: local;
+      }
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <h1>Lorem ipsum dolor sit</h1>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam adipisci deleniti rerum iste et quis. Est deserunt cumque, ipsam fugit et facere ea nisi maiores officiis, consequuntur sapiente temporibus voluptatum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint commodi harum, dignissimos distinctio officiis aliquam tempora nesciunt omnis vitae minima inventore sapiente amet laborum ab laudantium natus saepe consectetur nihil? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ut eius accusamus modi cum quod error, praesentium quo minus maxime tenetur cupiditate, rerum, iure quisquam quam et reiciendis velit magnam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid perferendis pariatur ipsum delectus quasi, optio vero blanditiis eligendi repudiandae quis sint placeat nostrum sunt accusantium quas veniam nihil laboriosam non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, iure aspernatur. Modi nobis ullam, maxime animi est ducimus consequuntur eos tenetur adipisci obcaecati nemo debitis voluptatibus veritatis mollitia nostrum praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, fugit tempore? Doloribus, nobis! Sequi minus numquam delectus iure, aut facilis ipsum nostrum atque dicta ipsa adipisci, nihil quod rerum eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum doloribus quasi nisi sequi, placeat fugit pariatur quos consequuntur aspernatur, illum voluptates sed delectus? Placeat, quisquam culpa laudantium voluptatibus commodi eaque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et facilis totam ut voluptate esse aperiam sed. Nesciunt quidem consequatur deserunt, sapiente magni vitae tempora? Deserunt esse dolore blanditiis consectetur commodi.</p>
+    </div>
+
+    <img src="images/dahlia.jpg">
+
+    <div class="sprite testing"></div>
+    <div class="sprite number-1"></div>
+    <div class="sprite number-2"></div>
+    <div class="sprite number-3"></div>
+    <div class="sprite number-4"></div>
+    <div class="sprite number-5"></div>
+    <div class="sprite number-6"></div>
+    <div class="sprite number-7"></div>
+    <div class="sprite number-8"></div>
+    <div class="sprite number-9"></div>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Jhon
+                </td>
+                <td>Corner</td>
+            </tr>
+            <tr>
+                <td>
+                    Neo
+                </td>
+                <td>D. Truman</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <p class="my-element">This is  a paragraph</p>
+
+    <div class="container">
+        <div class="inline-blocks">I'm the 1st child</div>
+        <div class="inline-blocks">I'm the 2nd child</div>
+        <div class="normal-blocks">I'm the 3rd child</div>
+       
+    </div>
+    <p>This is the the <span class="hidden">Hidden</span> block</p>
+    <p>This is the the <span class="invisible">Invisible</span> block</p>
+
+    <div class="col">
+        <p>Unordered List</p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <ul class="circle">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <ul class="square">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+            </div>
+            <div class="col">
+                <p>Ordered List</p>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+                <ol class="upper-roman">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+                <ol class="lower-alpha">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+                    </div>
+
+                    <div class="container">
+                        <div class="child">I'm child element</div>
+                    </div>
+                    <div class="container opacity">
+                        <div class="child">I'm child element</div>
+                    </div>
+                    <div class="container transparent">
+                        <div class="child">I'm child element</div>
+                    </div>
+
+                    <div class="container">
+                        <div class="child">
+                            I am the content
+                        </div>
+                    </div>
+
+                        <h1>This is a heading</h1>
+                       <div>This is a div</div>
+
+
+                       <ul class="navlist">
+                        <li class="sprite home"><a href="#home">Home</a></li>
+                        <li class="sprite prev"><a href="#prev">Prev</a></li>
+                        <li class="sprite next"><a href="#next">Next</a></li>
+                    </ul>
+
+                    <div>First paragraph</div>
+                    <div class="test">Second paragraph</div>
+                    <div class="div2">Second paragraph</div>
+                    <div class="div3">Third paragraph</div>
+
+                    <header>This is a header with height of 60px.</header>
+                    <div class="fixed"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita est, rerum laboriosam quis similique quam enim perferendis aut nesciunt omnis quaerat cumque excepturi laborum magni eligendi voluptas doloremque iusto veniam!Lorem</p>
+                    <footer></footer>
+</body>
+</html>

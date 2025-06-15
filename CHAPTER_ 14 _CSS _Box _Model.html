@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my-element{
+        width:200px;
+        height:200px;
+        padding:10px;
+        border:5px solid red;
+        margin: 8px;
+        box-sizing:border-box
+        }
+        .box{
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            border: 5px solid blue;
+            margin: 30px;
+            box-sizing: border-box;
+            line-height: 100px;
+            text-align: center;
+            font-size: 20px;
+            color: darkblue;
+        }
+        .box-content{
+            background-color: lightyellow;
+            padding: 10px;
+            border: 2px dashed orange;
+            margin: 10px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        body{
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        p{
+            outline: 5px dotted red;
+            border: 1px solid blue;
+            border-radius: 5px;
+        }
+        #parent{
+            border: 1px solid black;
+            background-color: aqua;
+        }
+        #child{
+            border: 1px solid red;
+            margin: 50px 30px;
+            /* margin-top: 50px 30px;
+            margin-right: 30px;
+            margin-bottom: 50px;
+            margin-left: 30px;
+            background-color: aqua; */
+        }
+    </style>
+    
+       
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">border-box</a></li>
+            <li><a href="">boxModel</a></li>
+            <li><a href="">OutLine</a></li>
+            <li><a href="">ParentChildBox</a></li>
+        </ul>
+    </nav>
+    <pre id="my-element">
+        #my-element {
+         width: 200px;
+         height: 200px;
+         padding: 10px;
+         border: 5px solid red;
+         margin: 8px;
+         box-sizing: border-box;
+        }
+    </pre>
+    <span id="result"></span>
+    <script>
+    var myElement = document.getElementById("my-element");
+    var width = myElement.offsetWidth;
+    var height = myElement.offsetHeight;
+    document.getElementById("result").innerHTML = "Element size"
+    width = " + width + ", "height = " + height;
+        </script>
+
+        <h1>Box Model Demonstration</h1>
+        <div class="container">
+            <div class="box"> <div class="box-content">content</div></div>
+            <div class="box"> <div class="box-content">content</div></div>
+        </div>
+        <p>This example Demonstration the CSS BOX MODEL</p>
+        <ul>
+            <li><b>content:</b>The actual content of the element(Text,image etc...)</li>
+            <li><b>padding:</b>The space between the content and the border</li>
+            <li><b>Border:</b>The Line around the padding and content</li>
+            <li><b>Margine:</b> The space outside the border between the element and other elemens</li>
+        </ul>
+
+
+
+        <p>This is a paragraph</p>
+
+
+
+
+        <div id="parent">
+            <div id="child">
+                This element has a top margine of 50px,a right margine of 30px,a bottom margin of 50px and a left margin of 30px.
+            </div>
+        </div>
+        
+</body>
+</html>

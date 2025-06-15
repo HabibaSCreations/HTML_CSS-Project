@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+        width: 100px;
+        height: 100px;
+        color: white;
+        background: red;
+        transition: width 2s;
+        }
+        div:hover {
+        width: 300px;
+        }
+        div {
+        width: 100px;
+        height: 100px;
+        color: white;
+        background: red;
+        transition: width 2s, height 4s, transform 2s;
+        }
+        div:hover {
+        width: 300px;
+        height: 300px;
+        transform: skewX(50deg);
+        }
+        div {
+        width: 100px;
+        height: 100px;
+        color: white;
+        background: red;
+        transition: width 2s, height 4s;
+        transition-delay: 1s;
+        }
+        div:hover {
+        width: 300px;
+        height: 300px;
+        }div {
+        width: 100px;
+        height: 100px;
+        color: white;
+        background: red;
+        transition: width 2s, height 4s;
+        transition-timing-function: ease-out;
+        }
+        div:hover {
+        width: 300px;
+        height: 300px;
+        }
+        @keyframes my-animation {
+ from {
+background-color: red;
+ }
+ to {
+background-color: yellow;
+ }
+}
+    div {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: my-animation;
+    animation-duration: 4s;
+    }
+    @keyframes my-animation {
+        0% {
+        background-color: red;
+        }
+        25% {
+        background-color: yellow;
+        }
+        50% {
+        background-color: blue;
+        }
+        100% {
+        background-color: green;
+        }
+        }
+        div {
+        width: 100px;
+        height: 100px;
+        background-color: cyan;
+        animation-name: my-animation;
+        animation-duration: 4s;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            color: white;
+            background-color: red;
+            transition: width 2s, height 4s, transform 2s;
+            transition-delay: 1s;
+            transition-timing-function: ease-out;
+        }
+        div:hover{
+            width: 300px;
+            height: 300px;
+            transform:rotateX('30')}
+            @keyframes my-animation {
+            from {
+            left: 0;
+            }
+            to {
+            left: 300px;
+            }
+            }
+            div {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: cyan;
+            animation-name: my-animation;
+            animation-duration: 4s;
+            animation-timing-function: ease-out;
+            }
+                        div {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: cyan;
+            animation-name: my-animation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>Hover the mouse on this element to see the effect!</div>
+
+    div {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: cyan;
+        animation: my-animation 4s linear infinite alternate;
+        }
+</body>
+</html>

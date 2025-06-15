@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   
+    <style>
+        body {
+          display: flex; 
+          margin: 0; 
+        }
+        
+        nav {
+          background-color: #333;
+          color: white;
+          padding: 20px; 
+          width: 200px; 
+          height: 100vh;
+          overflow-y: auto; 
+        }
+        
+        nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+        
+        nav li {
+          position: relative;
+        }
+        
+        nav a, .dropbtn { 
+          color: white;
+          text-decoration: none;
+          padding: 10px 15px; 
+          display: block;
+          transition: background-color 0.3s ease;
+          border: none; 
+          background: none; 
+          cursor: pointer; 
+          width: 100%; 
+          text-align: left; 
+        }
+        
+        nav a:hover, .dropbtn:hover {
+          background-color: #555;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          left: 0; 
+          top: 100%; 
+        }
+        
+        
+        nav li:hover .dropdown-content {
+          display: block;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
+        
+        
+        main {
+          flex: 1; 
+          padding: 20px;
+        }
+        
+        
+        nav {
+          border-right: 1px solid #ccc;
+        }
+        
+        
+        @media (max-width: 768px) {
+          body {
+            flex-direction: column; 
+          }
+        
+          nav {
+            width: 100%; 
+            height: auto; 
+            border-right: none; 
+            border-bottom: 1px solid #ccc; 
+          }
+        
+          .dropdown-content {
+            left: 0; 
+            top: 100%;
+          }
+        }
+        .login-wrapper {
+        color:rgb(90, 17, 41);     
+        align-items: center;
+        text-align: center;
+        
+        
+    }
+   
+        
+        </style>
+    
+   
+</head>
+<body>
+
+    
+        <nav>
+            
+
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="testhtmlcss.html">About</a></li>
+              <li class="dropdown">
+                <button class="dropbtn">HTML &#9662;</button>
+                <div class="dropdown-content">
+                    <a href="CHAPTER _1_ Getting _to_ Know _HTML.html">CHAPTER _1_ Getting _to_ Know _HTML.html</a>
+                  <a href="CHAPTER_ 2_ HTML_ Elements.html">CHAPTER_ 2_ HTML_ Elements.html</a>
+                  <a href="CHAPTER _3_ HTML_ Styles.html">CHAPTER _3_ HTML_ Styles.html</a>
+                  <a href="CHAPTER_ 4_ Semantic _HTML.html">CHAPTER_ 4_ Semantic _HTML.html</a>
+                  <a href="CHAPTER_5_Web_forms.html">CHAPTER_5_Web_forms.html</a>
+                  <a href="CHAPTER_ 6_ HTML_ Multimedia.html">CHAPTER_ 6_ HTML_ Multimedia.html</a>
+                  <a href="CHAPTER _7_ HTML_ Graphics.html">CHAPTER _7_ HTML_ Graphics.html</a>
+                  <a href="CHAPTER_ 8 HTML_ Advanced.html">CHAPTER_ 8 HTML_ Advanced.html</a>
+                  <a 
+                    
+                </div>
+              </li>
+              <li class="dropdown">
+                <button class="dropbtn">CSS &#9662;</button>
+                <div class="dropdown-content">
+                    <a href="CHAPTER _11_ Getting_ to_ Know_ CSS.html">Page 3</a>
+                    <a href="CHAPTER_ 12_ CSS _Selectors.html">CHAPTER_ 12_ CSS _Selectors.html</a>
+                    <a href="CHAPTER_ 13_ CSS_ Cascading.html">CHAPTER_ 13_ CSS_ Cascading.html</a>
+                    <a href="CHAPTER_ 14 _CSS _Box _Model.html">CHAPTER_ 14 _CSS _Box _Model.html</a>
+                    <a href="CHAPTER_ 15_ CSS_ Colors.html">CHAPTER_ 15_ CSS_ Colors.html</a>
+                    <a href="CHAPTER_16_CSS_Text.html">CHAPTER_16_CSS_Text.html</a>
+                    <a href="CHAPTER _17_ CSS_ Backgrounds.html">CHAPTER _17_ CSS_ Backgrounds.html</a>
+                    <a href="CHAPTER _18 _CSS_ Display.html">CHAPTER _18 _CSS_ Display.html</a>
+                    <a href="CHAPTER _19_ CSS_ Layout.html">CHAPTER _19_ CSS_ Layout.html</a>
+                    <a href="CHAPTER _20_ CSS _Transitions_ and_ Animations.html">CHAPTER _20_ CSS _Transitions_ and_ Animations.html</a>
+                    <a href="CHAPTER _21_ Advanced_ CSS.html">CHAPTER _21_ Advanced_ CSS.html</a>
+                    <a href="CHAPTER _22_ Responsive_ CSS.html">CHAPTER _22_ Responsive_ CSS.html</a>
+                  
+                  
+
+                </div>
+              </li>
+              <li><a href="dropdownnav.html">Contact</a></li>
+            </ul>
+          </nav>
+          <img  src="images/istockphoto-481063036-612x612.jpg" >
+          
+          <main>
+            <h1 style="text-align:center;color: blue;">A warm welcome to my project!</h1>
+            <p>This HTML & CSS project is a great example of building a well-structured and visually appealing website. It effectively utilizes structured HTML and beautiful CSS styling to present the main content clearly and professionally.
+                This project is a significant milestone in my web development journey, helping me grow and enhance my skills as a developer
+            </p>
+
+
+            <div class="login-wrapper">
+           
+           
+                <h2 style="text-align: center; color: whitesmoke; margin-bottom: 10px;">Student Info</h2>
+                <div class="div100">
+               
+                <div class="info">
+                    <p>Name: MST.Habiba Akter</p>
+                    <p>Trainee ID: 1286130</p>
+                    <p>Batch: CS/SCSL-A/63/01</p>
+                    <p>Submitted to: Syed Zahidul Hassan</p>
+                    <p>Project Name:HTML-CSS Project</p>
+                    <p>Module:HTML5 and CSS3</p>
+                    </div>
+                    
+                </div>       
+         </main>    
+</body>
+</html>

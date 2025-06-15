@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                :root {
+        --a-global-color: red;
+        }
+        section {
+        --a-local-color: blue;
+        }
+        header {
+        color: var(--a-global-color);
+        }
+        footer {
+        color: var(--a-local-color);
+        }
+        project,
+        footer {
+        height: 30px;
+        line-height: 30px;
+        }
+        Project {
+        border-bottom: 1px solid black;
+        }
+        footer {
+        border-top: 1px solid black;
+        text-align: center;
+        }
+        .main-content {
+        min-height: calc(100vh - 96px);
+        }
+        .long-content {
+        border: 1px solid #ccc;}
+        body {
+        font-size: 12px;
+        counter-reset: my-section;
+        }
+        h1 {
+        counter-reset: my-sub-section;
+        }
+        h1::before {
+        counter-increment: my-section;
+        content: "Section " counter(my-section) ". ";
+        }
+        h2::before {
+        counter-increment: my-sub-section;
+        content: counter(my-section) "." counter(my-sub-section) " ";
+        }
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+        <h2>This is a project</h2>
+        </header>
+        <p>This is a Project-1.</p>
+        <footer>
+        <p>This is a footer.</p>
+        </footer>
+        </section>
+        <footer>
+        <p>This is the main footer.</p>
+        </footer>
+
+        <header>Header</header>
+        <div class="main-content">
+        <p>This is a paragraph</p>
+        <p class="long-content">This is a long paragraph</p>
+        </div>
+        <footer>Footer</footer>
+
+
+                <h1>HTML project:</h1>
+        <h2>HTML project</h2>
+        <h2>CSS project</h2>
+        <h1>Scripting :</h1>
+        <h2>JavaScript</h2>
+        <h2>VBScript</h2>
+</body>
+</html>
