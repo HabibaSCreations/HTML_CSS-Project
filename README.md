@@ -52,7 +52,7 @@ View styling effects by exploring each chapter file with linked CSS (if applicab
 Habiba Anjum
 🌱 Trainee at ISDB-BISEW IT Scholarship Programme
 💻 Aspiring Full Stack .NET Developer
-📧 Email: habibaanjum@gmail.com
+📧 Email: habibaanjum9799@gmail.com
 🔗 GitHub: HabibaSCreations
 
 🙌 Acknowledgments
